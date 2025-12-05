@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 st.title('Amazon Product Analysis Dashboard')
 
 # Load Data
-df = pd.read_csv('/content/amazon.csv')
+df = pd.read_csv('amazon.csv')
 
 # Data Cleaning and Preprocessing (moved from previous cells to be self-contained in app.py)
 df['discounted_price'] = df['discounted_price'].str.replace('₹', '').str.replace(',', '').astype(float)
